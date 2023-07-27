@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+    background-color: #ffffff;
+}
+
+.link{
+    text-decoration: none;
+    color: #4bb559;
+}
+
+/* Login */
+
+.form-group{
+    margin: auto;
+    margin-top: 100px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #f4f5f6;
+    position: relative;
+}
+
+.input-group{
+    position: relative;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+
+}
+
+.input-group label{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.forgot-password{
+ position: absolute;
+ bottom: 260px;
+ right: 80px;
+}
+
+/* Waiting */
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: solid 1px black;
+}
+
+.logo{
+    margin:0px 70px;
+    width: 310px;
+}
+
+.search-group{
+    width: 630px;
+    position: relative;
+}
+
+.search-group input{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 0.8em;
+    box-shadow: 0px 20px rgba(0, 0, 0, 0.037);
+    outline: none;
+    border: none;
+}
+
+.search-group span{
+    position: absolute;
+    font-size: 1.5em;
+    padding: 3px;
+    right: 0;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+
+.main{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+}
+
+.nav{
+    border-right: 1px solid black;
+    height: 100vh;
+}
+
+.btn{
+    margin: 50px ;
+    background-color: #45C456;
+    color: #f6f5f4;
+    width: 284px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.037) ;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #4bb559;
+}
+
+
+.nav-link{
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: baseline;
+    color: #1b2021;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.037);
+}
+
+.nav-link .icon{
+margin: 0 20px;
+}
+
+.profile{
+    position: absolute;
+    bottom: 150px;
+    background-color: rgb(250, 50, 50);
+    max-width: 300px;
+    margin-left: 30px;
+    color: #f4f5f6;
+}
+
+.profile:hover{
+    background-color: rgb(250, 0, 50);
+}
+
+.profile span{
+    margin: auto;
+}
+
+.lobby h1{
+    margin: 50px;
+}
+
+.table{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.table-section{
+    display: flex;
+    justify-content: space-between;
+   padding: 20px;
+}
+
+
+.table-section span:hover{
+    cursor: pointer;
 }
